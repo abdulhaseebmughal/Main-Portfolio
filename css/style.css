@@ -948,3 +948,15 @@ h3.my-profession {
 }
 
 
+.animation-img{
+  transform: translate(2% , 3%);
+}
+
+.animation-img{
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float{
+50%{
+  transform: translateY(10px);
+}
+}
