@@ -91,3 +91,16 @@ let typed = new Typed(".typing", {
       allSection[i].classList.toggle("open");
     }
   }
+
+  document.addEventListener('mousemove', function(e) {
+    const cursorOuter = document.querySelector('.custom-cursor-outer');
+    const cursorInner = document.querySelector('.custom-cursor-inner');
+    
+    cursorInner.style.left = e.clientX + 'px';
+    cursorInner.style.top = e.clientY + 'px';
+    
+    setTimeout(() => {
+        cursorOuter.style.left = e.clientX + 'px';
+        cursorOuter.style.top = e.clientY + 'px';
+    }, 50);
+});

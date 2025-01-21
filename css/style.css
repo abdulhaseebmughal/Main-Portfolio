@@ -12,7 +12,7 @@
 body {
   line-height: 1.5;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
 }
 
 body.dark {
@@ -959,4 +959,25 @@ h3.my-profession {
 50%{
   transform: translateY(10px);
 }
+}
+
+.custom-cursor-outer, .custom-cursor-inner {
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+.custom-cursor-outer {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #555555;
+  border-radius: 50%;
+  transition: transform 0.15s ease-out;
+}
+.custom-cursor-inner {
+  width: 6px;
+  height: 6px;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
+  border-radius: 50%;
+  transition: transform 0.05s ease-out;
 }
