@@ -105,65 +105,27 @@ let typed = new Typed(".typing", {
     }, 50);
 });
 
-
+// Function to show the popup
 function showPopup() {
   const popup = document.getElementById('download-popup');
   popup.classList.add('show'); 
 
   setTimeout(closePopup, 20000); 
-
 }
 
-// Function to close the popup
+
 function closePopup() {
   const popup = document.getElementById('download-popup');
-  popup.classList.remove('show'); 
+  popup.classList.remove('show');
 }
 
-
-// function downloadApp() {
-//   const downloadLink = document.getElementById('downloadLink');
-
-  
-//   downloadLink.click();
-// }
-
-// new one starts...
-let deferredPrompt;
-
-window.addEventListener('beforeinstallprompt', (event) => {
-    event.preventDefault();
-    deferredPrompt = event;
-});
 
 function downloadApp() {
-    if (deferredPrompt) {
-        deferredPrompt.prompt();
-        deferredPrompt.userChoice.then((choiceResult) => {
-            if (choiceResult.outcome === 'accepted') {
-                console.log('User accepted the install prompt');
-            } else {
-                console.log('User dismissed the install prompt');
-            }
-            deferredPrompt = null;
-        });
-    } else {
-        alert("Installation is not supported on this browser.");
-    }
+  const downloadLink = document.getElementById('downloadLink');
+
+
+  downloadLink.click();
 }
 
-// new one Ends...
 
 setTimeout(showPopup, 5000); 
-
-
-
-
-
-self.addEventListener('install', (event) => {
-  console.log('Service Worker Installed');
-});
-
-self.addEventListener('fetch', (event) => {
-  console.log('Service Worker Fetching:', event.request.url);
-});
