@@ -8,7 +8,7 @@ let typed = new Typed(".typing", {
       "SEO Expert",
     ],
     typeSpeed: 100,
-    BackSpeed: 60,
+    backSpeed: 60,
     loop: true,
   });
   
@@ -129,3 +129,7 @@ function downloadApp() {
 
 
 setTimeout(showPopup, 5000); 
+
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
+injectSpeedInsights();
