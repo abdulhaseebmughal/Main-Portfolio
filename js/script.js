@@ -129,7 +129,3 @@ function downloadApp() {
 
 
 setTimeout(showPopup, 5000); 
-
-import { injectSpeedInsights } from '@vercel/speed-insights';
-
-injectSpeedInsights();
