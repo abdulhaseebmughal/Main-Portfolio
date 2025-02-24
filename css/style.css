@@ -566,6 +566,10 @@ h3.my-profession {
   color: var(--text-black-900);
 }
 
+.title-1{
+  margin-bottom: 0px !important;
+}
+
 .about .about-content .timeline .timeline-text {
   line-height: 25px;
   font-size: 16px;
@@ -1342,6 +1346,10 @@ h3.my-profession {
 
   }
 
+  .responsive-mobile{
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 492px) {
@@ -1404,4 +1412,22 @@ padding: 10px !important;
 }
 
 
+}
+
+.timeline-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.dark .timeline-info .location-wrapper em,
+.dark .timeline-info .location-wrapper span {
+  color: white !important;
 }
