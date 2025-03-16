@@ -110,7 +110,8 @@ function showPopup() {
   const popup = document.getElementById('download-popup');
   popup.classList.add('show'); 
 
-  setTimeout(closePopup, 20000); 
+  // Automatically close after 20 seconds
+  setTimeout(closePopup, 20000);
 }
 
 
@@ -122,10 +123,17 @@ function closePopup() {
 
 function downloadApp() {
   const downloadLink = document.getElementById('downloadLink');
-
-
   downloadLink.click();
 }
 
 
-setTimeout(showPopup, 5000); 
+document.addEventListener("DOMContentLoaded", function () {
+  const closeButton = document.querySelector(".close-btn");
+  if (closeButton) {
+    closeButton.addEventListener("click", closePopup);
+  }
+});
+
+
+setTimeout(showPopup, 5000);
+
