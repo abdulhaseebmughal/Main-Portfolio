@@ -62,11 +62,11 @@ This professional portfolio by **Abdul Haseeb Mughal** showcases **18+ real-worl
 
 ## 📃 Certifications & Highlights
 
-- ✅ Front-End Web Development – Udemy
+- ✅ Front-End Web Development – Zaitoon Ashraf IT Park
 - ✅ JavaScript Deep Dive – FreeCodeCamp
 - ✅ Git & GitHub – LinkedIn Learning
-- ✅ WordPress/Elementor Expert – Digiskills
-- ✅ Laravel + PHP Basics – CodeWithMosh
+- ✅ WordPress/Elementor Expert – ScandictechAB
+- ✅ Laravel + PHP Basics – Aptech
 - 🏆 Hackathon Finalist – 2023
 
 ---
