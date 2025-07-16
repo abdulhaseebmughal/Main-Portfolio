@@ -137,3 +137,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 setTimeout(showPopup, 5000);
 
+/* Under development JS onclick start */
+
+document.querySelectorAll('.comming-soon').forEach(card => {
+  const link = card.querySelector('a');
+
+  // Disable actual navigation
+  link.removeAttribute('href');
+
+  // Handle both tap and click
+  card.addEventListener('click', function (e) {
+    e.preventDefault();
+    this.classList.add('clicked');
+    setTimeout(() => {
+      this.classList.remove('clicked');
+    }, 2500);
+  });
+});
+/* Under development JS onclick end */
